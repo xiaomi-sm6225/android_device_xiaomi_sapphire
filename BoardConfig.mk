@@ -11,3 +11,6 @@ include device/xiaomi/sm6225-common/BoardConfigCommon.mk
 
 # Inherit the proprietary files
 include vendor/xiaomi/sapphire/BoardConfigVendor.mk
+
+# Screen density
+TARGET_SCREEN_DENSITY := 440
