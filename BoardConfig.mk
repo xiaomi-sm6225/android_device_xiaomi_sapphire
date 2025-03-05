@@ -11,3 +11,6 @@ include device/xiaomi/sm6225-common/BoardConfigCommon.mk
 include vendor/xiaomi/sapphire/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/sapphire
+
+# Screen density
+TARGET_SCREEN_DENSITY := 440
