@@ -1,6 +1,9 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from Redmi Note 13 (OS2.0.10.0.VNGMIXM).
 
+# Current blobs with ELF checks disabled:
+# libar-pal depends on libagmclient, which is a gnu makefile target
+
 # ACDBs
 vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb
 vendor/etc/acdbdata/bengal_idp/IDP_workspaceFileXml.qwsp
@@ -56,7 +59,7 @@ vendor/etc/usecaseKvManager.xml
 # Audio
 vendor/lib64/hw/audio.primary.bengal.so
 vendor/lib64/libagm.so
-vendor/lib64/libar-pal.so
+vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so
 
 # Audio firmware
