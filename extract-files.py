@@ -28,9 +28,27 @@ namespace_imports = [
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
+    (
+        'libagmclient',
+    ): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
+    (
+        'vendor/lib64/libalLDC.so',
+        'vendor/lib64/libalhLDC.so',
+        'vendor/lib64/libmorpho_ldc.so',
+        'vendor/lib64/libmorpho_Ldc.so',
+        'vendor/lib64/libmorpho_ubwc.so',
+        'vendor/lib64/libTrueSight.so',
+    ): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_acquire')
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_lockPlanes')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
