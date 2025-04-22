@@ -625,6 +625,9 @@ odm/lib64/libgf_hal.so
 vendor/etc/permissions/qti_fingerprint_interface.xml
 
 # Sensors
+vendor/lib64/libsnpe_dsp_domains_v2.so
+
+# Sensors configs
 vendor/etc/sensors/config/agatti_ak991x_0.json
 vendor/etc/sensors/config/agatti_bmp285_0.json
 vendor/etc/sensors/config/agatti_bu52053nvx_0.json
