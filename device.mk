@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm6225-common/common.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sapphire/sapphire-vendor.mk)
 
+# Shipping API Level
+PRODUCT_SHIPPING_API_LEVEL := 33
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
